@@ -68,6 +68,8 @@ a:hover {
 </body>
 
 <script type='text/javascript'>
+$(function() {
+
 	$("a#playteaser01").fancybox({
 		'hideOnContentClick': true,
 		'overlayOpacity': 0.8,
@@ -75,12 +77,14 @@ a:hover {
 		'content': '<iframe src="http://player.vimeo.com/video/6274274?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 	});
 
-        $("a#playteaser02").fancybox({
-                'hideOnContentClick': true,
-                'overlayOpacity': 0.8,
-                'overlayColor': '#000',
+    $("a#playteaser02").fancybox({
+		'hideOnContentClick': true,
+		'overlayOpacity': 0.8,
+		'overlayColor': '#000',
 		'content': '<iframe src="http://player.vimeo.com/video/9332222?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1" width="640" height="352" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>'
 	});
+
+});	
 </script>
 
 </html>
