@@ -11,6 +11,8 @@
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
 <script type='text/javascript' src='/js/jquery.simplemodal.js'></script>
 <script type='text/javascript' src='/js/contact.js'></script>
+<script type='text/javascript' src='/fancybox/jquery.fancybox-1.3.4.pack.js'></script>
+
 
 <style type="text/css">
 body {
@@ -42,12 +44,18 @@ img {border:0;}
 #footer a:link, #footer a:visited {color:#888; text-decoration:none;}
 #footer a:hover {color:#333; text-decoration:underline;}
 .map { outline: 0; }
+#free_tchoup { display: block; }
+#free_tchoup a { display: block; width: 661px; height: 508px; background: #000 url(/imgs/free_tchoup01.png) no-repeat center center;}
 </style>
 
 <!-- Contact Form CSS files -->
 <link type='text/css' href='/css/contact.css' rel='stylesheet' media='screen' />
-
-
+<link type='text/css' href="/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" />
+<!--<style type="text/css">
+#fancybox-content {
+	border-color: #000;
+}
+</style>-->
 </head>
 
 <body>
@@ -75,4 +83,16 @@ img {border:0;}
 		<img src='/imgs/contact/loading.gif' alt='' />
 	</div>
 </body>
+
+<script type='text/javascript'>
+$(function() {
+	
+	$.fancybox('<div id="free_tchoup"><a href="http://www.kickstarter.com/projects/rossbros/music-will-set-us-free-release-our-new-film-tchoup" target="_blank"></a></div>', {
+		'hideOnContentClick': true,
+		'overlayOpacity': 0.25,
+		'overlayColor': '#CCC'
+	});
+	
+});
+</script>
 </html>
